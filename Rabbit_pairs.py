@@ -9,7 +9,7 @@ def count_pairs(n, k):
     # if the number of months is greater than 2
     if n > 2:
         m = 2  # month counter
-        for i in range(n+1):
+        for i in range(n-2):
             # total pairs for the next month is equal
             # to the previous original pair plus their k pairs of new offsprings.
             pairs_no[m+1] = pairs_no[m] + pairs_no[m-1]*k
